@@ -1,5 +1,7 @@
 # RetiMCP — a controlled development gateway for GitHub MCP
 
+> **Public demo scope:** This repository is a curated public demo of the privately maintained RetiMCP project. It includes selected code and documentation to showcase the architecture and engineering approach. Private configuration, operational details, and installation-specific integrations are intentionally excluded. This repository is intended for portfolio review and demonstration, and is not a complete distribution of the private project. Upstream components retain their original attribution and licenses.
+
 RetiMCP is an independent extension of the [GitHub MCP Server](https://github.com/github/github-mcp-server). It adds an authenticated execution endpoint for inspecting a dedicated Git worktree, pulling an exact reviewed commit, and running a small Python unit-test snapshot in an isolated Linux environment.
 
 The project demonstrates a separation between **authoring code** and **executing a known revision**. An AI client uses its normal GitHub workflow to create a commit; RetiMCP accepts the full commit SHA and verifies the configured worktree before performing a limited operation.

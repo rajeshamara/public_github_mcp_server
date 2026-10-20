@@ -1,5 +1,7 @@
 # GitHub MCP Server Installation Guides
 
+> **Public demo scope:** This repository is a curated public demo of the privately maintained RetiMCP project. It includes selected code and documentation to showcase the architecture and engineering approach. Private configuration, operational details, and installation-specific integrations are intentionally excluded. This repository is intended for portfolio review and demonstration, and is not a complete distribution of the private project. Upstream components retain their original attribution and licenses.
+
 This directory contains detailed installation instructions for the GitHub MCP Server across different host applications and IDEs. Choose the guide that matches your development environment.
 
 ## Installation Guides by Host Application
