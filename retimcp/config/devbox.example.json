@@ -1,0 +1,8 @@
+{
+  "worktree": "/absolute/path/to/agent-execution-worktree",
+  "branch": "agent-execution",
+  "remote": "https://github.com/OWNER/REPOSITORY.git",
+  "github_user_id": 0,
+  "state_dir": "/absolute/path/to/private-retimcp-state",
+  "public_url": "http://127.0.0.1:8082"
+}
