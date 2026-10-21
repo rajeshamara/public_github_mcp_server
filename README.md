@@ -1,12 +1,12 @@
 # RetiMCP — a controlled development gateway for GitHub MCP
 
-> **Public demo scope:** This repository is a curated public demo of the privately maintained RetiMCP project. It includes selected code and documentation to showcase the architecture and engineering approach. Private configuration, operational details, and installation-specific integrations are intentionally excluded. This repository is intended for portfolio review and demonstration, and is not a complete distribution of the private project. Upstream components retain their original attribution and licenses.
+> **Public edition scope:** This repository contains selected RetiMCP source and documentation for the development gateway. Private configuration, operational details, and installation-specific integrations are excluded; this is not a complete distribution of the privately maintained project. Upstream components retain their original attribution and licenses.
 
 RetiMCP is an independent extension of the [GitHub MCP Server](https://github.com/github/github-mcp-server). It adds an authenticated execution endpoint for inspecting a dedicated Git worktree, pulling an exact reviewed commit, and running a small Python unit-test snapshot in an isolated Linux environment.
 
-The project demonstrates a separation between **authoring code** and **executing a known revision**. An AI client uses its normal GitHub workflow to create a commit; RetiMCP accepts the full commit SHA and verifies the configured worktree before performing a limited operation.
+RetiMCP separates **authoring code** from **executing a known revision**. An AI client uses its normal GitHub workflow to create a commit; RetiMCP accepts the full commit SHA and verifies the configured worktree before performing a limited operation.
 
-## What Rajesh built
+## Gateway capabilities
 
 The custom implementation lives in [`retimcp/`](retimcp/):
 
@@ -67,6 +67,6 @@ This is a development tool, not a general command runner or a claim of productio
 
 ## Upstream attribution
 
-This repository contains GitHub's MCP Server source from public upstream commit [`6e00cee58c808b352a05c9e84d8d490eb61349d5`](https://github.com/github/github-mcp-server/tree/6e00cee58c808b352a05c9e84d8d490eb61349d5), together with Rajesh Amara's RetiMCP additions. The upstream implementation remains under the [MIT license](LICENSE), with the original copyright notice retained. See [UPSTREAM_README.md](UPSTREAM_README.md) for upstream documentation and [NOTICE.md](NOTICE.md) for provenance. This is an independent project and is not an official GitHub product release.
+This repository contains GitHub's MCP Server source from public upstream commit [`6e00cee58c808b352a05c9e84d8d490eb61349d5`](https://github.com/github/github-mcp-server/tree/6e00cee58c808b352a05c9e84d8d490eb61349d5), together with the RetiMCP extensions. The upstream implementation remains under the [MIT license](LICENSE), with the original copyright notice retained. See [UPSTREAM_README.md](UPSTREAM_README.md) for upstream documentation and [NOTICE.md](NOTICE.md) for provenance. This is an independent project and is not an official GitHub product release.
 
 The public repository starts from a reviewed source snapshot with fresh history. Deployment state, private configuration, operational logs, private application code, and the original private Git history are not included.
